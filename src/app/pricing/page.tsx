@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const plans = [
@@ -105,13 +104,16 @@ export default function PricingPage() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button
-                  className="w-full"
-                  variant={plan.popular ? "default" : "outline"}
-                  size="lg"
+                <a
+                  href="#"
+                  className={`w-full inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] ${
+                    plan.popular
+                      ? "bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                      : "border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+                  }`}
                 >
                   {plan.cta}
-                </Button>
+                </a>
               </CardFooter>
             </Card>
           ))}
@@ -123,8 +125,8 @@ export default function PricingPage() {
             Have questions? Check out our FAQ or contact support for help.
           </p>
           <div className="mt-4 flex justify-center gap-4">
-            <Button variant="link">View FAQ</Button>
-            <Button variant="link">Contact Support</Button>
+            <a href="#" className="text-primary underline-offset-4 hover:underline font-medium">View FAQ</a>
+            <a href="#" className="text-primary underline-offset-4 hover:underline font-medium">Contact Support</a>
           </div>
         </div>
       </div>
