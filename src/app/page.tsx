@@ -6,18 +6,18 @@ export default function Home() {
   const features = [
     {
       icon: Rocket,
-      title: "Rapid Development",
-      description: "Skip the boilerplate. Get to the core of your idea without the fuss. Build faster with our streamlined workflow.",
+      title: "Ship at Light Speed",
+      description: "Stop over-engineering. Start delivering. Our streamlined workflow eliminates decision fatigue so you can focus on what matters—building something real.",
     },
     {
       icon: CloudLightning,
-      title: "Minimal Setup",
-      description: "Everything you need, nothing you don&apos;t. Pure productivity with zero configuration overhead.",
+      title: "Zero Config, All Power",
+      description: "No more configuration hell. Everything just works out of the box. Spend your time writing code, not tweaking settings.",
     },
     {
       icon: Shield,
-      title: "Deploy Instantly",
-      description: "From concept to production in minutes, not days. One-click deployment to any platform.",
+      title: "Confident Deployments",
+      description: "From local machine to global scale in one command. Deploy with confidence, iterate without fear.",
     },
   ];
 
@@ -31,14 +31,14 @@ export default function Home() {
               Sloppy
             </CardTitle>
             <p className="text-xl text-muted-foreground">
-              Build faster. Ship sooner. Embrace the chaos.
+              Perfect is the enemy of done. Build it, ship it, improve it.
             </p>
           </CardHeader>
           <CardContent className="space-y-8">
             <div className="flex justify-center gap-4">
-              <Button size="lg">Get Started</Button>
+              <Button size="lg">Start Building</Button>
               <Button size="lg" variant="outline">
-                Learn More
+                See How It Works
               </Button>
             </div>
           </CardContent>
@@ -50,10 +50,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight mb-4">
-              Why Choose Sloppy?
+              Built for builders who refuse to wait
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to build and ship your next big idea, without the complexity.
+              We stripped away everything that slows you down. What&apos;s left is pure creation—fast, focused, and frictionless.
             </p>
           </div>
 
