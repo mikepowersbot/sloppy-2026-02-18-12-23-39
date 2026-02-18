@@ -1,85 +1,81 @@
-import React from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, Shield, BarChart3, Users, Globe, Smartphone } from "lucide-react";
-
-const features = [
-  {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Optimized performance that delivers results in milliseconds, keeping your users engaged.",
-  },
-  {
-    icon: Shield,
-    title: "Secure by Default",
-    description: "Enterprise-grade security features built-in to protect your data and privacy.",
-  },
-  {
-    icon: BarChart3,
-    title: "Advanced Analytics",
-    description: "Gain insights with powerful analytics and real-time reporting dashboards.",
-  },
-  {
-    icon: Users,
-    title: "Team Collaboration",
-    description: "Work together seamlessly with built-in collaboration tools and sharing.",
-  },
-  {
-    icon: Globe,
-    title: "Global Scale",
-    description: "Deploy worldwide with our distributed infrastructure and CDN.",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile First",
-    description: "Responsive design that works perfectly on all devices and screen sizes.",
-  },
-];
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Rocket, CloudLightning, Shield } from "lucide-react";
 
 export default function Home() {
+  const features = [
+    {
+      icon: Rocket,
+      title: "Rapid Development",
+      description: "Skip the boilerplate. Get to the core of your idea without the fuss. Build faster with our streamlined workflow.",
+    },
+    {
+      icon: CloudLightning,
+      title: "Minimal Setup",
+      description: "Everything you need, nothing you don&apos;t. Pure productivity with zero configuration overhead.",
+    },
+    {
+      icon: Shield,
+      title: "Deploy Instantly",
+      description: "From concept to production in minutes, not days. One-click deployment to any platform.",
+    },
+  ];
+
   return (
-    <main className="min-h-screen">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-24 text-center">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-          Build Amazing Products
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-          A modern platform that helps you create, deploy, and scale your applications with ease.
-          Focus on what matters most - building great experiences.
-        </p>
+      <section className="flex items-center justify-center bg-muted/30 p-8 py-24">
+        <Card className="w-full max-w-2xl">
+          <CardHeader className="text-center space-y-4">
+            <CardTitle className="text-4xl font-bold tracking-tight">
+              Sloppy
+            </CardTitle>
+            <p className="text-xl text-muted-foreground">
+              Build faster. Ship sooner. Embrace the chaos.
+            </p>
+          </CardHeader>
+          <CardContent className="space-y-8">
+            <div className="flex justify-center gap-4">
+              <Button size="lg">Get Started</Button>
+              <Button size="lg" variant="outline">
+                Learn More
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
       </section>
 
       {/* Features Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Powerful Features
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            Everything you need to build and grow your next big idea.
-          </p>
-        </div>
+      <section className="py-24 px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight mb-4">
+              Why Choose Sloppy?
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Everything you need to build and ship your next big idea, without the complexity.
+            </p>
+          </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <Card key={index} className="transition-shadow hover:shadow-lg">
+          <div className="grid gap-8 md:grid-cols-3">
+            {features.map((feature, index) => (
+              <Card key={index} className="relative overflow-hidden group hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <feature.icon className="h-6 w-6" />
                   </div>
-                  <CardTitle>{feature.title}</CardTitle>
-                  <CardDescription>{feature.description}</CardDescription>
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  {/* Additional content can go here if needed */}
+                  <p className="text-muted-foreground leading-relaxed">
+                    {feature.description}
+                  </p>
                 </CardContent>
               </Card>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
