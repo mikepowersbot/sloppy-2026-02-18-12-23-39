@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Rocket, Lightning, Shield } from "lucide-react";
+import { Rocket, CloudLightning, Shield } from "lucide-react";
 
 export default function Home() {
   const features = [
@@ -10,7 +10,7 @@ export default function Home() {
       description: "Skip the boilerplate. Get to the core of your idea without the fuss. Build faster with our streamlined workflow.",
     },
     {
-      icon: Lightning,
+      icon: CloudLightning,
       title: "Minimal Setup",
       description: "Everything you need, nothing you don&apos;t. Pure productivity with zero configuration overhead.",
     },
