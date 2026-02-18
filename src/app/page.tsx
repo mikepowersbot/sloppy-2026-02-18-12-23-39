@@ -6,18 +6,18 @@ export default function Home() {
   const features = [
     {
       icon: Rocket,
-      title: "Ship 10x Faster",
-      description: "Stop wrestling with configuration. Our battle-tested templates and best practices let you launch production-ready apps in hours, not weeks.",
+      title: "Rapid Development",
+      description: "Skip the boilerplate. Get to the core of your idea without the fuss. Build faster with our streamlined workflow.",
     },
     {
       icon: CloudLightning,
-      title: "Zero Setup, Zero Stress",
-      description: "No more dependency hell or environment headaches. Everything is pre-configured and ready to code. Start building meaningful features from minute one.",
+      title: "Minimal Setup",
+      description: "Everything you need, nothing you don&apos;t. Pure productivity with zero configuration overhead.",
     },
     {
       icon: Shield,
-      title: "Deploy with Confidence",
-      description: "Push to production with one click. Automatic CI/CD, instant rollbacks, and enterprise-grade security built in. Sleep soundly knowing your app is live and secure.",
+      title: "Deploy Instantly",
+      description: "From concept to production in minutes, not days. One-click deployment to any platform.",
     },
   ];
 
@@ -28,17 +28,17 @@ export default function Home() {
         <Card className="w-full max-w-2xl">
           <CardHeader className="text-center space-y-4">
             <CardTitle className="text-4xl font-bold tracking-tight">
-              Build Faster. Ship Sooner.
+              Sloppy
             </CardTitle>
             <p className="text-xl text-muted-foreground">
-              The modern developer platform that eliminates boilerplate and gets your ideas into production in record time. Focus on what matters—your product.
+              Build faster. Ship sooner. Embrace the chaos.
             </p>
           </CardHeader>
           <CardContent className="space-y-8">
             <div className="flex justify-center gap-4">
-              <Button size="lg">Start Building Free</Button>
+              <Button size="lg">Get Started</Button>
               <Button size="lg" variant="outline">
-                See How It Works
+                Learn More
               </Button>
             </div>
           </CardContent>
@@ -50,10 +50,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight mb-4">
-              Stop configuring. Start creating.
+              Why Choose Sloppy?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We've engineered every detail so you can focus on building features users love. This is development, simplified.
+              Everything you need to build and ship your next big idea, without the complexity.
             </p>
           </div>
 
