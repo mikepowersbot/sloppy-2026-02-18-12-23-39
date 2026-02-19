@@ -1,5 +1,4 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Rocket, CloudLightning, Shield } from "lucide-react";
 
 export default function Home() {
@@ -36,10 +35,8 @@ export default function Home() {
           </CardHeader>
           <CardContent className="space-y-8">
             <div className="flex justify-center gap-4">
-              <Button size="lg">Start Building</Button>
-              <Button size="lg" variant="outline">
-                See How It Works
-              </Button>
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-6">Start Building</button>
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-11 rounded-md px-6">See How It Works</button>
             </div>
           </CardContent>
         </Card>
