@@ -119,15 +119,9 @@ export default function PricingPage() {
           ))}
         </div>
 
-        {/* FAQ / Additional Info */}
-        <div className="mt-16 text-center">
-          <p className="text-muted-foreground">
-            Have questions? Check out our FAQ or contact support for help.
-          </p>
-          <div className="mt-4 flex justify-center gap-4">
-            <a href="#" className="text-primary underline-offset-4 hover:underline font-medium">View FAQ</a>
-            <a href="#" className="text-primary underline-offset-4 hover:underline font-medium">Contact Support</a>
-          </div>
+        {/* Footer note */}
+        <div className="mt-16 text-center text-sm text-muted-foreground">
+          <p>Placeholder plans generated at 2/18/2026, 2:30:00 PM</p>
         </div>
       </div>
     </div>

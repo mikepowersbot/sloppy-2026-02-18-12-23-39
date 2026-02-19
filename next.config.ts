@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactCompiler: false,
-  turbopack: {
-    root: process.cwd(),
-  },
+  // Use default configuration
 };
 
 export default nextConfig;
