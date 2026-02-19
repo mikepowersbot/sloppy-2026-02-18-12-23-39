@@ -24,6 +24,9 @@ export default function Nav() {
             <Link href="/contact" className="hover:text-primary transition-colors">
               Contact
             </Link>
+            <Link href="/faq" className="hover:text-primary transition-colors">
+              FAQ
+            </Link>
           </div>
         </div>
       </div>
